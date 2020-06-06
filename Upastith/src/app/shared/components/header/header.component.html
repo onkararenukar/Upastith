@@ -1,13 +1,13 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button>
+        <button mat-icon-button (click)="toggleSidebar()">
             <mat-icon>menu</mat-icon>
         </button>
 
         <span>APP LOGO</span>
         
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-            <ul fxLayout="row" fxLayoutGap="20px">
+            <ul fxLayout="row" fxLayoutGap="1px">
                 <li>
                     <button mat-icon-button>
                         <mat-icon>help_outline</mat-icon>
@@ -26,13 +26,8 @@
                                 Sign-out
                             </button>
                         </mat-menu>
-
                 </li>
             </ul>
         </div>
-        <!-- <span>Thirdline</span>
-        <span class="example-spacer"></span>
-        <mat-icon class="example-Icon" aria-hidden="false" aria-label="Example Delete Icon">delete</mat-icon>
-        <mat-icon class="example-Icon" aria-hidden="false" aria-label="Example Delete Icon">help</mat-icon> -->
     </mat-toolbar-row>
 </mat-toolbar>

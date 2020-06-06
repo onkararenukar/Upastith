@@ -9,6 +9,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule, MatButton } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list'
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatToolbarModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatMenuModule
+    MatMenuModule,
+    MatListModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
