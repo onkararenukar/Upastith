@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Upastith": {
+    "Upastih": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Upastith",
+            "outputPath": "dist/Upastih",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -56,7 +52,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -65,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Upastith:build"
+            "browserTarget": "Upastih:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Upastith:build:production"
+              "browserTarget": "Upastih:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Upastith:build"
+            "browserTarget": "Upastih:build"
           }
         },
         "test": {
@@ -91,7 +88,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -113,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Upastith:serve"
+            "devServerTarget": "Upastih:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Upastith:serve:production"
+              "devServerTarget": "Upastih:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Upastith"
+  "defaultProject": "Upastih"
 }
