@@ -9,15 +9,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule, MatButton } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatListModule } from '@angular/material/list'
+import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
-  ],
+  declarations: [HeaderComponent, FooterComponent, SidebarComponent],
   imports: [
     CommonModule,
     MatDividerModule,
@@ -27,12 +27,27 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    MatFormFieldModule,
+    MatCardModule,
+    FormsModule,
+    MatInputModule,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
-  ]
+    SidebarComponent,
+    MatDividerModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    FlexLayoutModule,
+    MatMenuModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatCardModule,
+    FormsModule,
+    MatInputModule,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
