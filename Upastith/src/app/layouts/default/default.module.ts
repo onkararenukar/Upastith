@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav'
+import { CustomMaterialModule } from 'src/app/custom-material/custom-material.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MatSidenavModule } from '@angular/material/sidenav'
     CommonModule,
     RouterModule,
     SharedModule,
-    MatSidenavModule
+    MatSidenavModule,
+    CustomMaterialModule
   ]
 })
 export class DefaultModule { }
