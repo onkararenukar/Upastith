@@ -8,9 +8,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCardModule} from '@angular/material/card';
-import { MatInputModule} from '@angular/material/input';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [],
@@ -25,7 +24,7 @@ import { MatInputModule} from '@angular/material/input';
     MatListModule,
     MatFormFieldModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
   ],
   exports: [
     MatDividerModule,
@@ -37,7 +36,7 @@ import { MatInputModule} from '@angular/material/input';
     MatListModule,
     MatFormFieldModule,
     MatCardModule,
-    MatInputModule
-  ]
+    MatInputModule,
+  ],
 })
-export class CustomMaterialModule { }
+export class CustomMaterialModule {}
