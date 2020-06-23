@@ -9,15 +9,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule, MatButton } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatListModule } from '@angular/material/list'
+import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
-  ],
+  declarations: [HeaderComponent, FooterComponent, SidebarComponent],
   imports: [
     CommonModule,
     MatDividerModule,
@@ -27,12 +23,8 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
   ],
-  exports: [
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent
-  ]
+  exports: [HeaderComponent, FooterComponent, SidebarComponent],
 })
-export class SharedModule { }
+export class SharedModule {}

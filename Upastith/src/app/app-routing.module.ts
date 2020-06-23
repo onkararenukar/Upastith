@@ -3,24 +3,29 @@ import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
-
+import { LoginComponent } from './modules/login/login.component';
 
 const routes: Routes = [
   {
     path: '',
     component: DefaultComponent,
-    children: [{
-      path: '',
-      component: DashboardComponent
-    }, {
+
+    children: [
+      {
+        path: '',
+        component: DashboardComponent,
+      },
+      {
         path: 'posts',
-      component:PostsComponent
-    }]
-  }
+        component: PostsComponent,
+      },
+      { path: '', component: LoginComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
