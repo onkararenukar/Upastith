@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule, MatButton } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule} from '@angular/material/card';
+import { MatInputModule} from '@angular/material/input';
 
-import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, SidebarComponent],
+  declarations: [],
   imports: [
     CommonModule,
     MatDividerModule,
@@ -25,10 +23,21 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule,
-
-    RouterModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatInputModule
   ],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent],
+  exports: [
+    MatDividerModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    FlexLayoutModule,
+    MatMenuModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatInputModule
+  ]
 })
-export class SharedModule {}
+export class CustomMaterialModule { }
