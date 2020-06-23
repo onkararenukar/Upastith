@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.module';
 import { LoginComponent } from './modules/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { CustomMaterialModule } from 'src/app/custom-material/custom-material.module';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent],
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     DefaultModule,
     FormsModule,
+    CustomMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

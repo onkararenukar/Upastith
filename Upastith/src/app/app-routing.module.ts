@@ -8,6 +8,11 @@ import { LoginComponent } from './modules/login/login.component';
 const routes: Routes = [
   {
     path: '',
+    component: LoginComponent,
+  },
+
+  {
+    path: '',
     component: DefaultComponent,
 
     children: [
@@ -19,7 +24,6 @@ const routes: Routes = [
         path: 'posts',
         component: PostsComponent,
       },
-      { path: '', component: LoginComponent },
     ],
   },
 ];
